@@ -4,6 +4,9 @@ on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - main
+    paths:
+      - .github/workflows/nzbget.yml
+      - apps/nzbget/**
 
 jobs:
   release:
