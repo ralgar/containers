@@ -24,7 +24,6 @@ aci:
   )
 
 # entry-id: 2  |  Dirsrv System Entry
-# TODO: Figure out what this contains, exactly
 dn: cn=389_ds_system,dc=homelab,dc=internal
 objectClass: top
 objectClass: nscontainer
@@ -150,49 +149,49 @@ aci: (
     (userdn="ldap:///anyone");
   )
 
-# entry-id: 8  |  Permission - Group Admin
+# entry-id: 7  |  Permission - Group Admin
 dn: cn=group_admin,ou=permissions,dc=homelab,dc=internal
 objectClass: top
 objectClass: groupOfNames
 objectClass: nsMemberOf
 cn: group_admin
 
-# entry-id: 9  |  Permission - Group Modify
+# entry-id: 8  |  Permission - Group Modify
 dn: cn=group_modify,ou=permissions,dc=homelab,dc=internal
 objectClass: top
 objectClass: groupOfNames
 objectClass: nsMemberOf
 cn: group_modify
 
-# entry-id: 10  |  Permission - User Admin
+# entry-id: 9  |  Permission - User Admin
 dn: cn=user_admin,ou=permissions,dc=homelab,dc=internal
 objectClass: top
 objectClass: groupOfNames
 objectClass: nsMemberOf
 cn: user_admin
 
-# entry-id: 11  |  Permission - User Modify
+# entry-id: 10  |  Permission - User Modify
 dn: cn=user_modify,ou=permissions,dc=homelab,dc=internal
 objectClass: top
 objectClass: groupOfNames
 objectClass: nsMemberOf
 cn: user_modify
 
-# entry-id: 12  |  Permission - User Password Reset
+# entry-id: 11  |  Permission - User Password Reset
 dn: cn=user_passwd_reset,ou=permissions,dc=homelab,dc=internal
 objectClass: top
 objectClass: groupOfNames
 objectClass: nsMemberOf
 cn: user_passwd_reset
 
-# entry-id: 13  |  Permission - User Read
+# entry-id: 12  |  Permission - User Read
 dn: cn=user_read,ou=permissions,dc=homelab,dc=internal
 objectClass: top
 objectClass: groupOfNames
 objectClass: nsMemberOf
 cn: user_read
 
-# entry-id: 14  |  Permission - User Private Read
+# entry-id: 13  |  Permission - User Private Read
 dn: cn=user_private_read,ou=permissions,dc=homelab,dc=internal
 objectClass: top
 objectClass: groupOfNames

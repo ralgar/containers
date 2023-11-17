@@ -4,6 +4,7 @@ run: build
 		--name 389ds \
 		--user 1000:1000 \
 		-e DS_SUFFIX_NAME="dc=homelab,dc=internal" \
+		-e DS_DM_PASSWORD="password" \
 		--network host \
 		-v ./data:/data \
 		-v ./ldif:/ldif \

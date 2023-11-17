@@ -283,11 +283,7 @@ def begin_magic():
         # Create the marker to say we exist. This is also a good writable permissions
         # test for the volume.
         basedn = '# basedn = dc=example,dc=com'
-        suffix = os.getenv("SUFFIX_NAME")
-        if suffix is not None:
-            log.warning("SUFFIX_NAME is deprecated, please use DS_SUFFIX_NAME instead")
-        else:
-            suffix = os.getenv("DS_SUFFIX_NAME")
+        suffix = os.getenv("DS_SUFFIX_NAME")
         if suffix is not None:
             basedn = f'basedn = {suffix}'
         config_file = """
@@ -309,11 +305,7 @@ binddn = cn=Directory Manager
     # If we have been requested to re-index, do so now ...
     _begin_check_reindex()
 
-    loglevel = os.getenv("ERRORLOG_LEVEL")
-    if loglevel is not None:
-        log.warning("ERRORLOG_LEVEL is deprecated, please use DS_ERRORLOG_LEVEL instead")
-    else:
-        loglevel = os.getenv("DS_ERRORLOG_LEVEL")
+    loglevel = os.getenv("DS_ERRORLOG_LEVEL")
     if loglevel is not None:
         try:
             n_loglevel = str(int(loglevel) | 266354688)

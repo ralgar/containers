@@ -2,7 +2,7 @@
 
 I created this container simply because other offerings consistently proved
  problematic for me. I not only wanted to create something more reliable, but
- something that was better suited for deployment in a GitOps fashion.
+ something that was better suited for deployment to Kubernetes.
 
 ## Configuration
 
@@ -21,4 +21,4 @@ ENV DS_STARTUP_TIMEOUT
 ## Acknowledgements
 
 William Brown and the University of Adelaide - For the original `Dockerfile`
- and `dscontainer` script, both of which I've modified.
+ and `dscontainer` script, both of which I've modified to suit my purposes.
